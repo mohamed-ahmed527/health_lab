@@ -1,0 +1,479 @@
+.top {
+  position: fixed;
+  bottom: 30;
+  right: 30;
+  display: none;
+  color: #51ca51;
+  border-radius: 50%;
+  padding: 14px 9px;
+  cursor: pointer;
+  font-size: 40px; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+.main_h1 {
+  text-align: center;
+  margin: 35px 0px;
+  font-family: 'Knewave', cursive; }
+  .main_h1 > span {
+    position: relative; }
+
+.main_h1 span::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  background-image: url(../assets/tag-line.png);
+  bottom: -25px; }
+
+.main_p {
+  color: grey;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.read_more {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1.5px solid #5858af;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #5858af;
+  transition: 0.5s all; }
+
+.read_more:hover {
+  background-color: #5858af;
+  color: white; }
+
+.menu {
+  float: right;
+  display: none;
+  position: absolute;
+  top: 15;
+  right: 40;
+  font-size: 50px;
+  cursor: pointer; }
+
+.menu:hover {
+  color: #79ce7d; }
+
+/************navbar****************/
+nav {
+  overflow: hidden;
+  padding: 15px 0px;
+  background-color: white; }
+  nav .logo {
+    width: 13%;
+    float: left; }
+    nav .logo img {
+      width: 100%; }
+  nav .list {
+    float: left;
+    margin-left: 120px; }
+    nav .list ul {
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      nav .list ul li {
+        margin-top: 5px;
+        margin-right: 10px; }
+        nav .list ul li a {
+          text-decoration: none;
+          padding: 5px;
+          font-size: 17px;
+          cursor: pointer;
+          color: #173e96;
+          font-weight: 600;
+          font-family: 'Ubuntu', sans-serif; }
+          nav .list ul li a:hover {
+            filter: saturate(2); }
+  nav .lang {
+    float: right; }
+    nav .lang ul {
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      nav .lang ul li {
+        margin: 0px 3px;
+        padding: 5px;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: 'Ubuntu', sans-serif;
+        color: #51ca51; }
+
+/**************end of navbar*********/
+header {
+  text-align: center;
+  background-image: url(../assets/slider-01.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat; }
+  header .layout {
+    padding: 300px 0px;
+    background-color: #00000033; }
+    header .layout h1 {
+      font-size: 45px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bolder; }
+    header .layout p {
+      font-size: 16px;
+      color: white; }
+    header .layout button {
+      padding: 10px 35px;
+      border: 0px;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: 0.5s all; }
+      header .layout button:hover {
+        background-color: #51ca51;
+        color: white; }
+
+/****************************ABOUT US**********************/
+.about {
+  margin: 100px 0px; }
+  .about .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .about .container .row .col-lg-6 .about_text {
+      padding-right: 20px;
+      padding-bottom: 20px; }
+      .about .container .row .col-lg-6 .about_text h2 {
+        margin-bottom: 30px;
+        font-size: 34px; }
+      .about .container .row .col-lg-6 .about_text p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px; }
+    .about .container .row .col-lg-5 .about_img {
+      border: 2px solid cadetblue; }
+      .about .container .row .col-lg-5 .about_img img {
+        width: 100%; }
+
+/*********************services***************/
+.services {
+  margin: 100px 0px; }
+  .services .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .services .container .row .col-xs-12 .serv {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border: 2px solid #5858af;
+      padding: 25px 5px;
+      margin-bottom: 50px; }
+      .services .container .row .col-xs-12 .serv h1 {
+        margin: 60px 0px;
+        z-index: 10000; }
+        .services .container .row .col-xs-12 .serv h1 span {
+          padding: 25px;
+          position: relative;
+          font-size: 24px;
+          color: #5858af;
+          overflow: hidden;
+          transition-timing-function: ease-in-out; }
+        .services .container .row .col-xs-12 .serv h1 span::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 98%;
+          border: 2px solid #5858af;
+          transform: rotate(45deg);
+          border-radius: 3px;
+          transition-timing-function: ease-in-out; }
+      .services .container .row .col-xs-12 .serv h4 {
+        margin-bottom: 20px;
+        margin-top: 75px;
+        font-size: 20px; }
+      .services .container .row .col-xs-12 .serv p {
+        margin-bottom: 25px;
+        color: grey; }
+      .services .container .row .col-xs-12 .serv:hover {
+        background-color: #599ea00d; }
+      .services .container .row .col-xs-12 .serv:hover h1 span {
+        color: cadetblue; }
+      .services .container .row .col-xs-12 .serv:hover h1 span::after {
+        border-color: cadetblue;
+        transform: rotate(-90deg);
+        transition: all 0.5s; }
+    .services .container .row .col-xs-12 .serv::before {
+      content: "";
+      position: absolute;
+      top: 3;
+      right: 3;
+      border-left: 20px solid transparent;
+      border-right: 20px solid #5858af;
+      border-top: 20px solid #5858af;
+      border-bottom: 20px solid transparent; }
+
+/***************APPOINTMENT***************/
+.appointment {
+  margin: 100px 0px; }
+  .appointment .container .row .col-xs-12 .parent_form h1 {
+    margin-bottom: 40px; }
+  .appointment .container .row .col-xs-12 .parent_form form {
+    padding: 4px; }
+    .appointment .container .row .col-xs-12 .parent_form form .row {
+      margin-left: 0px;
+      margin-right: 0px; }
+      .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 {
+        margin: 15px 0px;
+        padding-left: 0px; }
+        .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 input {
+          width: 100%;
+          padding: 10px 5px;
+          outline-style: none;
+          font-size: 15px;
+          margin: 4px; }
+        .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 select {
+          margin: 4px;
+          width: 100%;
+          outline-style: none;
+          font-size: 15px;
+          color: #5858af;
+          padding: 10px 5px; }
+    .appointment .container .row .col-xs-12 .parent_form form button {
+      width: 170px;
+      font-size: 16px;
+      padding: 10px 15px;
+      background-color: transparent;
+      border: 1px solid #5858af;
+      transition: 0.5s all;
+      border-radius: 2px; }
+      .appointment .container .row .col-xs-12 .parent_form form button:hover {
+        background-color: #5858af;
+        color: white; }
+  .appointment .container .row .col-xs-12 .why_appointment h1 {
+    margin-bottom: 45px; }
+  .appointment .container .row .col-xs-12 .why_appointment div {
+    margin-bottom: 25px; }
+    .appointment .container .row .col-xs-12 .why_appointment div h4 {
+      margin-bottom: 15px; }
+    .appointment .container .row .col-xs-12 .why_appointment div p {
+      color: grey; }
+
+/**********************DOCTOR*****************/
+.doctor {
+  margin: 100px 0px; }
+  .doctor .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .doctor .container .row .col-xs-12 .doc_img {
+      position: relative;
+      text-align: center;
+      border: 3px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 50px; }
+      .doctor .container .row .col-xs-12 .doc_img img {
+        display: block;
+        width: 100%;
+        margin: auto;
+        transform: scale(0.7);
+        transition: 0.7s all; }
+      .doctor .container .row .col-xs-12 .doc_img .doc_info {
+        transition: 0.7s all;
+        position: absolute;
+        bottom: 0%;
+        left: -100%;
+        background-color: #5858afad;
+        width: 100%;
+        color: white;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; }
+        .doctor .container .row .col-xs-12 .doc_img .doc_info h3 {
+          font-size: 21px; }
+        .doctor .container .row .col-xs-12 .doc_img .doc_info p {
+          font-size: 17px; }
+        .doctor .container .row .col-xs-12 .doc_img .doc_info .social {
+          margin-bottom: 15px; }
+          .doctor .container .row .col-xs-12 .doc_img .doc_info .social span {
+            margin: 3px;
+            font-size: 17px;
+            cursor: pointer; }
+            .doctor .container .row .col-xs-12 .doc_img .doc_info .social span:hover {
+              color: black; }
+      .doctor .container .row .col-xs-12 .doc_img:hover .doc_info {
+        left: 0%; }
+      .doctor .container .row .col-xs-12 .doc_img:hover img {
+        transform: scale(0.8); }
+
+/***********************CONTACT************/
+.contact {
+  margin: 100px 0px; }
+  .contact .contact_main {
+    margin: 30px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #dddddd5c;
+    padding: 20px 15px;
+    border-radius: 15px;
+    transition: 0.4s all; }
+    .contact .contact_main:hover {
+      cursor: pointer;
+      padding: 25px 20px;
+      background-color: #c9c3c35c; }
+    .contact .contact_main .icon {
+      float: left;
+      font-size: 38px;
+      color: green;
+      border: 2px dotted green;
+      border-radius: 50%;
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      padding-top: 15px;
+      margin-right: 25px; }
+    .contact .contact_main .text {
+      float: left; }
+      .contact .contact_main .text h4 {
+        font-size: 21px;
+        margin-top: 0; }
+      .contact .contact_main .text p {
+        color: grey;
+        cursor: pointer; }
+
+/***************************NAVBAR-REGISTRATION**************************/
+nav .register_p1, nav .register_p2 {
+  z-index: 1000000;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #33322654; }
+  nav .register_p1 .sign_up, nav .register_p1 .log_in, nav .register_p2 .sign_up, nav .register_p2 .log_in {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 8%;
+    background-color: #ffffff3d; }
+    nav .register_p1 .sign_up h2, nav .register_p1 .log_in h2, nav .register_p2 .sign_up h2, nav .register_p2 .log_in h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #000000e3;
+      font-size: 37px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 600; }
+    nav .register_p1 .sign_up form .form-group input, nav .register_p1 .log_in form .form-group input, nav .register_p2 .sign_up form .form-group input, nav .register_p2 .log_in form .form-group input {
+      color: black;
+      font-size: 16px; }
+    nav .register_p1 .sign_up form .form-group button, nav .register_p1 .log_in form .form-group button, nav .register_p2 .sign_up form .form-group button, nav .register_p2 .log_in form .form-group button {
+      display: block;
+      width: 100%;
+      margin: auto;
+      font-size: 17px;
+      padding: 7px 0px;
+      border: 1px;
+      border-radius: 4px; }
+
+/**********************media query***************/
+@media (min-width: 100px) and (max-width: 600px) {
+  nav .logo {
+    width: 32%; }
+
+  header .layout h1 {
+    font-size: 52px; }
+
+  header .layout p {
+    font-size: 22px; } }
+@media (min-width: 601px) and (max-width: 800px) {
+  nav .logo {
+    width: 28%; }
+
+  header .layout h1 {
+    font-size: 50px; }
+
+  header .layout p {
+    font-size: 20px; } }
+@media (min-width: 801px) and (max-width: 992px) {
+  nav .logo {
+    width: 26%; }
+
+  header .layout h1 {
+    font-size: 50px; }
+
+  header .layout p {
+    font-size: 20px; } }
+@media (max-width: 992px) {
+  .read_more {
+    font-size: 16px;
+    width: 150px; }
+
+  .container {
+    width: 97%;
+    margin: auto; }
+
+  .about .container .row .col-lg-6 .about_text p {
+    font-size: 18px; }
+
+  .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 input {
+    font-size: 18px; }
+
+  .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 select {
+    font-size: 18px; }
+
+  .main_h1 {
+    font-size: 42px; }
+
+  .main_p {
+    font-size: 17px; }
+
+  .menu {
+    display: block; }
+
+  nav .list {
+    display: none;
+    float: none;
+    margin: auto;
+    margin-top: 55px; }
+    nav .list ul {
+      display: block; }
+      nav .list ul li {
+        margin-top: 12px; }
+        nav .list ul li a {
+          font-size: 19px; }
+
+  nav .lang {
+    display: none;
+    float: none;
+    margin-top: 25px; }
+    nav .lang ul {
+      display: block; }
+      nav .lang ul li {
+        margin: 0px;
+        margin-top: 7px;
+        font-size: 19px; }
+
+  .services .container .row .col-xs-12 .serv h4 {
+    font-size: 24px; }
+
+  .services .container .row .col-xs-12 .serv p {
+    font-size: 17px; }
+
+  .contact .contact_main .text h4 {
+    font-size: 24px; }
+
+  .contact .contact_main .text p {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=newstyle.css.map */

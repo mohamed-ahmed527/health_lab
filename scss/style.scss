@@ -1,0 +1,588 @@
+.top{
+  position: fixed;
+  bottom: 30;
+  right: 30;
+  display: none;
+  color: #51ca51;
+  border-radius: 50%;
+  padding: 14px 9px;
+  cursor: pointer;
+  font-size: 40px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.main_h1{
+  text-align: center;
+  margin: 35px 0px;
+  font-family: 'Knewave', cursive;
+  >span{
+    position: relative;
+  }
+}
+.main_h1 span::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  background-image: url(../assets/tag-line.png);
+  bottom: -25px;
+}
+.main_p{
+  color: grey;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.read_more{
+  width: 120px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1.5px solid #5858af;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #5858af;
+  transition: 0.5s all;
+}
+.read_more:hover{
+  background-color: #5858af;
+  color: white;
+}
+.menu{
+  float: right;
+  display: none;
+  position: absolute;
+  top: 15;
+  right: 40;
+  font-size: 50px;
+  cursor: pointer;
+}
+.menu:hover{
+  color: #79ce7d;
+}
+/************navbar****************/
+nav{
+  overflow: hidden;
+  padding: 15px 0px;
+  background-color: white;
+  .logo{
+    width: 13%;
+    float: left;
+    img{
+      width: 100%;
+    }
+  }
+  .list{
+    float: left;
+    margin-left: 120px;
+    ul{
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      li{
+        margin-top: 5px;
+        margin-right: 10px;
+        a{
+          text-decoration: none;
+          padding: 5px;
+          font-size: 17px;
+          cursor: pointer;
+          color: #173e96;
+          font-weight: 600;
+          font-family: 'Ubuntu', sans-serif;  
+          &:hover{
+            filter: saturate(2);
+          }  
+        }
+      }
+    }
+  }
+  .lang{
+    float: right;
+    ul{
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      li{
+        margin: 0px 3px;
+        padding: 5px;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: 'Ubuntu', sans-serif;
+        color: #51ca51;
+      }
+    }
+  }
+}
+/**************end of navbar*********/
+header{
+  text-align: center;
+  background-image: url(../assets/slider-01.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  .layout{
+    padding: 300px 0px;
+    background-color: #00000033;
+    h1{
+      font-size: 45px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bolder;
+    }
+    p{
+      font-size: 16px;
+      color: white;   
+    }
+    button{
+      padding: 10px 35px;
+      border: 0px;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: 0.5s all;
+      &:hover{
+        background-color: #51ca51;
+        color: white; 
+      }
+    }    
+  }
+}
+/****************************ABOUT US**********************/
+.about{
+  margin: 100px 0px;
+  .container{
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .col-lg-6{
+        .about_text{
+          padding-right: 20px;
+          padding-bottom: 20px;
+          h2{
+            margin-bottom: 30px;
+            font-size: 34px;
+          }
+          p{
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .col-lg-5{
+        .about_img{                 
+          border: 2px solid cadetblue;
+          img{
+            width: 100%;
+          }          
+        }
+      }
+    }
+  }
+}
+/*********************services***************/
+.services{
+  margin: 100px 0px;
+  .container{
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .col-xs-12{
+        .serv{
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          border: 2px solid #5858af;
+          padding: 25px 5px;
+          margin-bottom: 50px;
+          h1{
+            margin: 60px 0px;
+            z-index: 10000;
+            span{
+              padding: 25px;
+              position: relative;
+              font-size: 24px;
+              color: #5858af;
+              overflow: hidden;
+              transition-timing-function: ease-in-out;
+            }
+            span::after{
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 98%;
+              border: 2px solid #5858af;
+              transform: rotate(45deg);
+              border-radius: 3px;
+              transition-timing-function: ease-in-out ;
+            }
+          }
+          h4{
+            margin-bottom: 20px;
+            margin-top: 75px;
+            font-size: 20px;
+          }
+          p{
+            margin-bottom: 25px;
+            color: grey;
+          }
+          &:hover {
+            background-color: #599ea00d ;
+          }
+          &:hover h1 span{
+            color: cadetblue;
+          }
+          &:hover h1 span::after{
+            border-color: cadetblue;
+            transform: rotate(-90deg) ;
+            transition: all 0.5s ;
+   
+          }          
+        }
+        .serv::before{
+          content: "";
+          position: absolute;
+          top: 3;
+          right: 3;
+          border-left: 20px solid transparent;
+          border-right:20px solid #5858af;
+          border-top:20px solid #5858af;
+          border-bottom:20px solid transparent;
+        }  
+      }
+    }
+  }
+}
+/***************APPOINTMENT***************/
+.appointment{
+  margin: 100px 0px ;
+  .container{
+    .row{
+      .col-xs-12{
+        .parent_form{
+          h1{
+            margin-bottom: 40px;
+          }
+          form{
+            padding: 4px;
+            .row{
+              margin-left: 0px;
+              margin-right: 0px;
+              .col-xs-12{
+                margin: 15px 0px;
+                padding-left: 0px;
+                input{
+                  width: 100%;
+                  padding: 10px 5px;
+                  outline-style: none;
+                  font-size: 15px;
+                  margin: 4px;
+                }
+                select{
+                  margin: 4px;
+                  width: 100%;
+                  outline-style: none;
+                  font-size: 15px;
+                  color: #5858af;
+                  padding: 10px 5px;
+                }
+              }
+            }
+            button{
+              width: 170px;
+              font-size: 16px;
+              padding: 10px 15px;
+              background-color: transparent;
+              border: 1px solid #5858af;
+              transition: 0.5s all;
+              border-radius: 2px;
+              &:hover{
+                background-color: #5858af;
+                color: white;
+              }
+            }
+          }
+        }
+        .why_appointment{
+          h1{
+            margin-bottom: 45px;
+          }
+          div{
+            margin-bottom: 25px;
+            h4{
+              margin-bottom: 15px;
+            }
+            p{
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**********************DOCTOR*****************/
+.doctor{
+  margin: 100px 0px;
+  .container{
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .col-xs-12{
+        .doc_img{
+          position: relative;
+          text-align: center;
+          border: 3px solid #ddd;
+          border-radius: 5px;
+          overflow: hidden;
+          margin-bottom: 50px;
+          img{
+            display: block;
+            width: 100%;
+            margin: auto;
+            transform: scale(0.7);
+            transition: 0.7s all;
+          }
+          .doc_info{
+            transition: 0.7s all;
+            position: absolute;
+            bottom: 0%;
+            left: -100%;
+            background-color: #5858afad;
+            width: 100%;
+            color: white;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            h3{
+              font-size: 21px;
+            }
+            p{
+              font-size: 17px;
+            }
+            .social{
+              margin-bottom: 15px;    
+              span{
+                margin: 3px;
+                font-size: 17px;
+                cursor: pointer;
+                &:hover{
+                  color: black;
+                }
+              }              
+            }
+          }
+          &:hover .doc_info{
+            left: 0%;
+          }
+          &:hover img{
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+}
+/***********************CONTACT************/
+.contact{
+  margin: 100px 0px;
+  .contact_main{
+    margin: 30px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #dddddd5c;
+    padding: 20px 15px;
+    border-radius: 15px;
+    transition: 0.4s all;
+    &:hover{
+      cursor: pointer;
+      padding: 25px 20px;
+      background-color: #c9c3c35c;
+    }
+    .icon{
+      float: left;
+      font-size: 38px;
+      color: green;
+      border: 2px dotted green;
+      border-radius: 50%;
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      padding-top: 15px;
+      margin-right: 25px;
+    }
+    .text{
+      float: left;
+      h4{
+        font-size: 21px;
+        margin-top: 0;
+      } 
+      p{
+        color: grey;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/***************************NAVBAR-REGISTRATION**************************/
+nav{
+  .register_p1 , .register_p2{
+    z-index: 1000000;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #33322654;
+    .sign_up , .log_in{
+      position: relative;
+      width: 40%;
+      margin: auto;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 8%;
+      background-color: #ffffff3d;
+      h2{
+        text-align: center;
+        margin-bottom: 50px;
+        color: #000000e3;
+        font-size: 37px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight:600;
+      }
+      form{
+        .form-group{
+          input{
+            color: black;
+            font-size: 16px;
+          }
+          button{
+            display: block;
+            width: 100%;
+            margin: auto;
+            font-size: 17px;
+            padding: 7px 0px;
+            border: 1px ;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**********************media query***************/
+@media (min-width:100px) and (max-width:600px) {
+  nav .logo{
+    width: 32%;
+  }
+  header .layout h1{
+    font-size: 52px;
+  }
+  header .layout p{
+    font-size: 22px;
+  }
+}
+@media (min-width:601px) and (max-width:800px) {
+  nav .logo{
+    width: 28%;
+  }
+  header .layout h1{
+    font-size: 50px;
+  }
+  header .layout p{
+    font-size: 20px;
+  }
+}
+@media (min-width:801px) and (max-width:992px) {
+  nav .logo{
+    width: 26%;
+  }
+  header .layout h1{
+    font-size: 50px;
+  }
+  header .layout p{
+    font-size: 20px;
+  }
+}
+@media (max-width:992px) {
+  .read_more{
+    font-size: 16px;
+    width: 150px;
+  }
+  .container{
+    width: 97%;
+    margin: auto;
+  }
+  .about .container .row .col-lg-6 .about_text p{
+    font-size: 18px;
+  }
+  .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 input{
+    font-size: 18px;
+  }
+  .appointment .container .row .col-xs-12 .parent_form form .row .col-xs-12 select{
+    font-size: 18px;
+  }
+  .main_h1{
+    font-size: 42px;
+  }
+  .main_p{
+    font-size: 17px;
+  }
+  .menu{
+    display: block;
+  }
+  nav .list{
+    display: none;
+    float: none;
+    margin: auto;
+    margin-top: 55px;
+    ul{
+      display: block;
+      li{
+        margin-top: 12px;
+        a{
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  nav .lang{
+    display: none;
+    float: none;
+    margin-top: 25px;
+    ul{
+      display: block;
+      li{
+        margin: 0px;
+        margin-top: 7px;
+        font-size: 19px;
+      }
+    }
+  }
+  .services .container .row .col-xs-12 .serv h4{
+    font-size: 24px;
+  }
+  .services .container .row .col-xs-12 .serv p{
+    font-size: 17px;
+  }
+  .contact .contact_main .text h4{
+    font-size: 24px;
+  }
+  .contact .contact_main .text p{
+    font-size: 16px;
+  }
+}
